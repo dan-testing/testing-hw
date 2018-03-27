@@ -1,0 +1,5 @@
+Věk pasažéra	Stát pasažéra	Karta frequent flyer programu	Třída	Preferense sedět u nouzového východu	Zpátečný letenka	Možnost změny termínu letu
+Do 2 let-A	Je občan země EU	Ne	Standardní-A	Ano	Ano, s pevným návrazem-B	Do dvou dnů před letem za poplatek 250 EUR
+2-10 let-A	Není občan země EU	Standard	První-B	Ne	Ano, s otevřeným návratem-A	Do jednoho týdne před letem za poplatek 50 EUR
+10 a více let-B		Business			Ne-C	Do dvou týdnů před letem za poplatek 20 EUR
+						Ne

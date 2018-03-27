@@ -1,0 +1,39 @@
+1) 	POČÁTEČNÍ PODMÍNKY: Uživatel je přihlášen. (jméno a heslo z databáze validních uživatelů)
+	POSTUP: Dej do košíku 1. položku v nabídce eshopu. Přejdi na nákup obsahu košíku. Vyber platbu hotově. Potvrď platbu a přijmi fakturu.
+	OČEKÁVANÝ VÝSLEDEK: Potvrzení, faktura, úspěšný nákup, datum doručení.
+	
+2) 	POČÁTEČNÍ PODMÍNKY: Uživatel je přihlášen.
+	POSTUP: Vyhledej v nabídce eshopu produkt, který není skladem, dej ho do košíku. Proklikej se na nákup obsahu košíku. Vyber platbu hotově. Potvrď platbu. 
+	OČEKÁVANÝ VÝSLEDEK: Faktura. Informace o zdržení objednávky a očekávané datum naskladnění.
+	
+3)	POČÁTEČNÍ PODMÍNKY: Uživatel je přihlášen.
+	POSTUP: Vyber v nabídce nejlevnější produkt - seřazeno podle ceny. Přidej produkt do košíku a přejdi k nákupu obsahu košíku. Vyber platbu hotově a uplatni platný slevový kupón (123abc). Potvrď nákup.
+	OČEKÁVANÝ VÝSLEDEK: Potvrzení, faktura, Odečtení slevy, datum doručen.
+	
+4)	POČÁTEČNÍ PODMÍNKY: Uživatel je přihlášen.
+	POSTUP: Vyhledej v nabídce zboží podle názvu ("spotřebič"). Přidej do košíku a nakup první dva produkty z nabídky. Vyber metodu platby kartou online. Zadej validní údaje z databáze. Potvrď platbu a částku. 
+	OČEKÁVANÝ VÝSLEDEK: Název produktů opodívá slovu "spotřebič". Cena odpovídá součtu cen jednotlivých spotřebičů. Faktura, potvrzení přijetí platby, datum doručen.
+	
+5)	POČÁTEČNÍ PODMÍNKY: Uživatel je přihlášen.
+	POSTUP: Vyhledej v nabídce zboží v cenovém intervalu od 0 do 5 000. Vyber okrajové produkty, přidej do košíku a nakup. Vyber platbu převodem. Nasimuluj poslání peněz převodem.	
+	OČEKÁVANÝ VÝSLEDEK: Oba produkty leží v zadaném cenovém intervalu. Po pár minutách dojde potvrzení o přijetí platby a faktura, datum doručení zboží.
+	
+6) 	POČÁTEČNÍ PODMÍNKY: Uživatel není přihlášen. Úvodní strana eshopu.
+	POSTUP: Přejdi na nabídku eshopu. Vyhledej zboží podle jména "null". 
+	OČEKÁVANÝ VÝSLEDEK: Ukáže se prázdný seznam.
+	
+7)	POČÁTEČNÍ PODMÍNKY: Uživatel není přihlášen.
+	POSTUP: V nabídce eshopu zkus zadat záporné rozmezí ceny a interval <a,b> kde a > b.
+	OČEKÁVANÝ VÝSLEDEK: Kritéria nejsou validní, tedy nepůjde zadat, interval nepůjde vybrat.
+	
+8) 	POČÁTEČNÍ PODMÍNKY: Uživatel není přihlášen.
+	POSTUP: V nabídce eshopu vyber produkt podle ceny od 999 do 999 korun. Vyber 1. produkt a dej jej do košíku. Nakup obsah košíku. Přihlaš se po vyzvání (údaje z databáze platných uživatelů). Vyber platbu hotově. Nech si zaslat fakturu a potvrzení.
+	OČEKÁVANÝ VÝSLEDEK: Ukáží se produkty v ceně přesně 999 korun. Systém si vyžádá přihlášení uživatele. Přihlášení proběhne v pořádku. Bude zasláno potvrzení a datum doručení zboží.
+	
+9) 	POČÁTEČNÍ PODMÍNKY: Uživatel není přihlášen.
+	POSTUP: Přejdi k registraci. Zadej platný email a heslo "123abc...". Vyplň dnešní datum narození. Nezaškrtni políčko: "Souhlasím se zpracováním osobních údajů".
+	OČEKÁVANÝ VÝSLEDEK: Systém nedokončí registraci a upozorní uživatele na nedosažení věkové hranice 15 let a nezaškrtnutí políčka "souhlasím se zpracování osobních údajů".
+	
+10)	POČÁTEČNÍ PODMÍNKY: Uživatel není přihlášen.
+	POSTUP: Z nabídky eshopu vyber 1. produkt. Zařaď do košíku a nakup. Registruj se s platným emailem, jménem "Petr Novák" a heslem "null". Dokonči registraci, přejdi do emailové schránky a přihlaš se. Potvrď registraci nově přijatým emailem. V eshopu dokonči nákup. Vyber platbu v hotovosti.
+	OČEKÁVANÝ VÝSLEDEK: Systém se dotáže na přihlášení. Registruje uživatele bez problémů. Odešle potvrzovací email do 1 minuty. Dokončí nákup a pošle fakturu na uvedený mail.
